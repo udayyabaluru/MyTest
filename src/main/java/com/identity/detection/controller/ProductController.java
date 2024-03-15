@@ -68,7 +68,7 @@ public class ProductController
 					additionalInfoMap.put("emotionalTone", "netural");
 					additionalInfoMap.put("backgroundNoiseLevel", "low");
 					m.put("additionalInfo", additionalInfoMap);
-					
+					log.info("Inside handleFileUpload "+m.toString());
 				return new ResponseEntity<Object>(m,HttpStatus.OK);
 			}
 	 
